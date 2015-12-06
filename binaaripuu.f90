@@ -6,22 +6,23 @@ module AVLpuu
     ! Puun solmu 
     type :: solmu
         type (solmu), pointer :: vasen, oikea, vanhempi
-        integer :: lukumaara
-        character(len=:), allocatable :: sana(:)
+        integer :: lukumaara = 1
+        character(len=50) :: sana(50) !TODO voiko tehdä fiksummin?
     end type solmu
 
 contains
+
     ! Palauttaa pisimmän matkan annetusta solmusta lehteen
-    integer recursive function korkeus(s)
+    integer recursive function korkeus(s) result(palautus)
+        implicit none
         type (solmu), pointer, intent(in) :: s
         integer :: k1, k2
-        integer, intent(out) :: korkeus
-              
+
         if (.not. associated(s)) then
-            korkeus = -1
+            palautus = -1
             return
         else
-            else if (associated(s%vasen)) then
+            if (associated(s%vasen)) then
                 k1 = korkeus(s%vasen)
             else
                 k1 = -1
@@ -34,19 +35,18 @@ contains
             end if
                     
             if (k1 .gt. k2) then
-                korkeus = k1 + 1
+                palautus = k1 + 1
             else
-                korkeus = k2 + 1
+                palautus = k2 + 1
             end if
         end if
-        end function korkeus
+    end function korkeus
 
     ! Palauttaa viitteen solmun s lapseen, jonka arvo on annettu sana tai null-viitteen jos solmua ei löydy
-    type (solmu) recursive function etsi(pituus, s, sana)
+    type (solmu) recursive function etsi(pituus, s, sana) result(palautus)
         integer, intent(in) :: pituus
         type (solmu), pointer,  intent(in) :: s
         character, intent(in) :: sana(pituus)
-        type (solmu), pointer, intent(out) :: palautus
 
         if (.not. associated(s)) then
             nullify(palautus)
@@ -54,13 +54,13 @@ contains
             palautus = s
         else if (sana .lt. s%sana) then
             if (associated(s%vasen)) then
-                palautus => etsi(s%vasen, sana)
+                palautus => etsi(len(sana), s%vasen, sana)
             else
                 nullify(palautus)
             end if
         else
             if (associated(s%oikea)) then
-                palautus => etsi(s%oikea, sana)
+                palautus => etsi(len(sana), s%oikea, sana)
             else
                 nullify(palautus)
             end if
@@ -69,24 +69,23 @@ contains
 
     ! Lisää puuhun, jonka juuri on s, solmun, johon talletetaan annettu sana. Mikäli tällainen solmu on jo olemassa, kasvattaa
     ! solmun laskuria yhdellä. Palauttaa viitteen lisättyyn solmuun.
-    type (solmu) recursive function lisaa(pituus, sana, s, vanhempi, juuri)
+    type (solmu) recursive function lisaa(pituus, sana, s, vanhempi, juuri) result(lisatty)
         integer, intent(in) :: pituus
         character, intent(in) :: sana(pituus)
-        type (solmu), pointer, intent(in) :: s
+        type (solmu), pointer, intent(inout) :: s
         type (solmu), pointer, intent(in) :: vanhempi
         type (solmu), pointer, intent(in) :: juuri
-        type (solmu), pointer, intent(out) :: lisatty
 
-        if (.not. allocated(s)) then
+        if (.not. (associated(s)) then
             allocate(s)
             s%sana = sana
             s%lukumaara = 1
             nullify(s%vasen)
             nullify(s%oikea)
             s%vanhempi => vanhempi
-            tasapainota_lisays(s, juuri)
+            call tasapainota_lisays(s, juuri)
         else if (sana .eq. s%sana) then ! solmu löytyy jo puusta
-            s%lukumaara++
+            s%lukumaara = s%lukumaara + 1
         else if (sana .lt. s%sana) then
             lisatty => lisaa(pituus, sana, s%vasen, s, juuri)
         else
@@ -114,17 +113,17 @@ contains
 
                 if (.not. associated(isovanhempi)) then
                     juuri => alipuu
-                else if (isovanhempi%vasen .eq. vanhempi) then
-                    isovanhempi.vasen => alipuu
+                else if (isovanhempi%vasen%sana .eq. vanhempi%sana) then
+                    isovanhempi%vasen => alipuu
                 else
-                    isovanhempi.oikea => alipuu
+                    isovanhempi%oikea => alipuu
                 end if
 
                 return
             else if (korkeus(vanhempi%oikea) .eq. korkeus(vanhempi%vasen) + 2) then !epätasapaino oikeasta lapsesta johtuen
                 isovanhempi = vanhempi%vanhempi
 
-                if (korkeus(vanhempi%oikea) > korkeus(vanhempi%vasen) then
+                if (korkeus(vanhempi%oikea) .gt. korkeus(vanhempi%vasen)) then
                     alipuu = kiertoVasen(vanhempi)
                 else
                     alipuu = kiertoOikeaVasen(vanhempi)
@@ -132,14 +131,13 @@ contains
 
                 if (.not. associated(isovanhempi)) then
                     juuri => alipuu
-                else if (isovanhempi%vasen .eq. vanhempi) then
+                else if (isovanhempi%vasen%sana .eq. vanhempi%sana) then
                     isovanhempi%vasen => alipuu
                 else
                     isovanhempi%oikea => alipuu
                 end if
             end if
-            vanhempi => vanhempi%parent
-
+            vanhempi => vanhempi%vanhempi
         end do
     end subroutine tasapainota_lisays
 
@@ -172,8 +170,8 @@ contains
     type (solmu) function kiertoOikeaVasen(s1)
         type (solmu), pointer, intent(in) :: s1
         type (solmu), pointer, intent(out) :: s2
-        k1%oikea => kiertoOikea(s2)
-        k2 => kiertoVasen(k2)
+        s1%oikea => kiertoOikea(s2)
+        s2 => kiertoVasen(s2)
     end function kiertoOikeaVasen
 
     type (solmu) function kiertoVasenOikea(s1)

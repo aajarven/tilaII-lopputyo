@@ -78,6 +78,15 @@ contains
        end if
     end function lisaa
 
+!    ! Lupaava alku funktiolle, jolla voisi poistaa solmun (ja jota tähän ei tarvita)
+!    recursive function poista(pituus, juuri, poistettava) result(palautus)
+!        integer, intent(in) ::pituus
+!        type(solmu), pointer, intent(in) :: juuri
+!        character(len=pituus), intent(in) :: poistettava
+!        type(solmu), pointer :: poisto
+!        type(solmu), pointer :: palautus
+
+
     ! Tasapainottaa puun lisäyksen jälkeen
     recursive subroutine tasapainota_lisays(s, juuri)
         type (solmu), pointer, intent(in) :: s

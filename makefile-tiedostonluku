@@ -1,0 +1,14 @@
+testi : tiedostonluku.o tiedostonluku.mod testi.o
+	gfortran -o bin/testi src/testi.f90 tiedostonluku.o
+
+tiedostonluku.o : src/tiedostonluku.f90
+	gfortran -c src/tiedostonluku.f90
+
+tiedostonluku.mod : src/tiedostonluku.f90
+	@true
+
+testi.o : src/testi.f90
+	gfortran -c src/testi.f90
+
+clean:
+	/bin/rm *.o tiedostonluku.mod

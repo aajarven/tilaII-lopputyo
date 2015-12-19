@@ -1,13 +1,13 @@
 module tiedostonluku
 
     implicit none
-    character(len=50), private :: rivi !TODO legitimpi mitta
+    character(len=1000), private :: rivi
     integer, private :: alkukohta
-    !character(len=*), private, parameter :: sanan_kirjaimet = "a"
-    character(len=*), private, parameter :: sanan_kirjaimet = "abcdefghijklmnopqrstuvwxyz1234567890-"
+    character(len=*), private, parameter :: sanan_kirjaimet = "abcdefghijklmnopqrstuvwxyz1234567890-" ! merkit, joista sana voi koostua
 
 contains
 
+    ! Avaa tiedoston luettavaksi ja siirtää lukukohdan tiedoston alkuun.
     function avaa(pituus, tiedostonimi) result(onnistui)
         integer, intent(in) :: pituus
         character(len=pituus), intent(in) :: tiedostonimi
@@ -30,14 +30,13 @@ contains
         else
             onnistui = .true.
             alkukohta = len(rivi)
-            !read(1,*) rivi
         end if
     end function avaa
 
+    ! Lukee seuraavan lukemattoman sanan. Jos sanoja ei ole, palauttaa tyhjän merkkijonon.
     function lue_sana() result(sana)
         character(len=50) :: sana
         integer :: indeksi
-!        integer :: kohta
         integer :: i
         integer :: edellinen
         logical :: auki
@@ -45,88 +44,48 @@ contains
 
         inquire(unit=1, opened=auki)
         if (.not. auki) then
-            write(*,*) "tiedosto tulee avata lue-funktiolla ennen sanojen lukemista."
+            write(*,*) "tiedosto tulee avata avaa-funktiolla ennen sanojen lukemista."
             sana = ''
             return
         end if
        
-        !TODO jos pilkku tms, lukee edeltävän sanan kahdesti
-        do while (.true.) !todo ruma hack, fiksaa
-            if(alkukohta .eq. len(rivi)) then
-                !write(*,*) "riviä ei ole"
+        do while (.true.) ! luetaan rivejä kunnes löytyy sana
+
+            if(alkukohta .eq. len(rivi)) then ! jos ollaan rivin lopussa,  viahdetaan riviä
                 read(1,"(a)", iostat=ios) rivi
-                call tolower(rivi)
 
                 if (ios /= 0) then
-                    write(*,*) "riviä ei voitu lukea"
+                    sana = ''
                     return
                 end if
-                !write(*,*) rivi
+                
+                call tolower(rivi)
                 alkukohta = 1
                 edellinen = 1
+                call seuraavaan_sanaan()
             end if
 
-            do i=alkukohta,len_trim(rivi)
-                !write(*,*) "alkukohta:", alkukohta
-                !write(*,*) "i:", i
+            do i=alkukohta,len(rivi) ! loopataan koko rivin yli
                 indeksi = index(sanan_kirjaimet, rivi(i:i))
-                !write(*,*) "indeksi:", indeksi
-                !write(*,*) "edellinen:", edellinen
-                if (indeksi .eq. 0 .and. edellinen .gt. 0) then
+                if (indeksi .eq. 0 .and. edellinen .gt. 0) then ! sanan loppu
                     read (rivi(alkukohta:i-1), *, iostat=ios) sana
                     alkukohta = i+1
                     edellinen = indeksi
+                    call seuraavaan_sanaan()
                     return
-                else if (indeksi .gt. 0 .and. edellinen .eq. 0) then
-                    alkukohta = i
                 end if
-
                 edellinen = indeksi
             end do
+
+            read (rivi(alkukohta:len_trim(rivi)), *, iostat=ios) sana ! luetaan rivin viimeinen sana 
             alkukohta =len(rivi)
+            if (.not. sana .eq. '') then ! jos rivin viimeinen sana ei ole tyhjä, palautetaan se
+                return
+            end if
         end do
-        
-!        if(alkukohta .eq. len(rivi)) then
-!            !write(*,*) "riviä ei ole"
-!            read(1,"(a)", iostat=ios) rivi
-!            if (ios /= 0) then
-!                write(*,*) "riviä ei voitu lukea"
-!                return
-!            end if
-!            write(*,*) rivi
-!            alkukohta = 0
-!        end if
-!         
-!        kohta = alkukohta
-!        edellinen = alkukohta
-!        
-!        do while(kohta .lt. len(rivi))
-!            write(*,"(a,a)") "tutkitaan ",rivi(kohta:kohta)
-!            write(*,*) "kohta: ", kohta
-!            indeksi = index(sanan_kirjaimet, rivi(kohta:kohta))
-!            write(*,*) "indeksi:", indeksi, "edellinen:", edellinen
-!            if (indeksi .eq. 0 .and. edellinen .gt. 0) then
-!                !write(*,*) "1"
-!                read(rivi(alkukohta:kohta-1), *, iostat=ios) sana
-!                if (ios /= 0) then
-!                    write(*,*) "merkkiä ei voitu lukea"
-!                    return
-!                end if
-!                alkukohta = kohta
-!                edellinen = indeksi
-!                kohta = kohta + 1
-!                write(*,*) sana
-!                return
-!            else if (indeksi .gt. 0 .and. edellinen .eq. 0) then
-!                !write(*,*) "2"
-!                alkukohta = kohta
-!            end if
-!            edellinen = indeksi
-!            kohta = kohta + 1
-!        end do
-        
     end function lue_sana
 
+    ! Muuttaa annetun merkkijonon isot kirjaimet pieniksi. Muuntaa vain kirjaimet A-Z.
     subroutine tolower(str)
         character(*), intent(inout) :: str
         integer :: i
@@ -139,4 +98,10 @@ contains
         end do
     end subroutine tolower
 
+    ! siirtää lukukohdan seuraavan sanan alkuun
+    subroutine seuraavaan_sanaan()
+        do while (index(sanan_kirjaimet, rivi(alkukohta:alkukohta)) .eq. 0 .and. alkukohta .lt. len(rivi))
+            alkukohta = alkukohta+1
+        end do
+    end subroutine seuraavaan_sanaan
 end module

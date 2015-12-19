@@ -51,25 +51,23 @@ contains
 
     ! Lisää puuhun, jonka juuri on s, solmun, johon talletetaan annettu sana. Mikäli tällainen solmu on jo olemassa, kasvattaa
     ! solmun laskuria yhdellä. Palauttaa viitteen lisättyyn solmuun.
-    recursive function lisaa(pituus, sana, s, vanhempi, juuri) result(lisatty)
+    recursive function lisaa(pituus, sana, juuri) result(lisatty)
         integer, intent(in) :: pituus
         character(len=pituus), intent(in) :: sana
-        type (solmu), pointer, intent(inout) :: s
-        type (solmu), pointer, intent(in) :: vanhempi
-        type (solmu), pointer, intent(in) :: juuri
-        type (solmu), pointer :: lisatty
+        type (solmu), pointer, intent(inout) :: juuri
+        type (solmu), pointer, intent(out) :: lisatty
         
-        if (.not. associated(s)) then
-            allocate(s)
-            s%sana = sana
-            s%lukumaara = 1
-            nullify(s%vasen)
-            nullify(s%oikea)
-            s%vanhempi => vanhempi
-            lisatty => s
-            call tasapainota_lisays(s, juuri)
-        else if (sana .eq. s%sana) then ! ollaan jo oikeassa solmussa
-            s%lukumaara = s%lukumaara + 1
+        if (.not. associated(juuri)) then
+            allocate(juuri)
+            juuri%sana = sana
+            juuri%lukumaara = 1
+            nullify(juuri%vasen)
+            nullify(juuri%oikea)
+            juuri%vanhempi => vanhempi
+            lisatty => juuri
+            call tasapainota_lisays(lisatty, juuri)
+        else if (sana .eq. juuri%sana) then ! ollaan jo oikeassa solmussa
+            juuri%lukumaara = juuri%lukumaara + 1
             lisatty => s
         else if (sana .lt. s%sana) then ! oikea solmu vasemmassa alipuussa
             lisatty => lisaa(pituus, sana, s%vasen, s, juuri)
@@ -88,13 +86,23 @@ contains
 
 
     ! Tasapainottaa puun lisäyksen jälkeen
-    recursive subroutine tasapainota_lisays(s, juuri)
-        type (solmu), pointer, intent(in) :: s
-        type (solmu), pointer :: juuri
+    recursive subroutine tasapainottava_lisays(pituus, sana, juuri)
+        integer, intent(in) :: pituus
+        character(len=pituus), intent(in) :: sana
+        type (solmu), pointer, intent(inout) :: juuri
+        type (solmu), pointer :: lisatty
         type (solmu), pointer :: vanhempi
         type (solmu), pointer :: isovanhempi
         type (solmu), pointer :: alipuu
-        vanhempi => s%vanhempi
+        
+        lisatty => lisaa(pituus, sana, juuri)
+
+        if (lisatty%lukumaara .gt. 1) then ! ei tarvita tasapainotusta
+            return
+        end if
+        
+        vanhempi => lisatty%vanhempi
+        
         do while (associated(vanhempi))
             if (korkeus(vanhempi%vasen) .eq. korkeus(vanhempi%oikea) + 2 ) then ! epätasapaino vasemmasta lapsesta johtuen
                 isovanhempi => vanhempi%vanhempi
@@ -133,7 +141,7 @@ contains
             end if
             vanhempi => vanhempi%vanhempi
         end do
-    end subroutine tasapainota_lisays
+    end subroutine tasapainottava_lisays
 
     function kiertoOikea(s1) result(s2)
         type (solmu), pointer, intent(in) :: s1

@@ -12,6 +12,27 @@ module AVLpuu
 
 contains
 
+    subroutine tulosta_solmu(s)
+        implicit none
+        type (solmu), pointer, intent(in) :: s
+        character(len=5) :: lkm
+        if (associated(s)) then
+            write(lkm, "(I5)") s%lukumaara
+            write (*,"(A,A)") adjustl(lkm), s%sana
+        end if
+    end subroutine
+
+    recursive subroutine tulosta_kaikki(root)
+        type (solmu), pointer, intent(in) :: root
+        if (.not. associated(root)) then
+            return
+        else
+            call tulosta_kaikki(root%vasen)
+            call tulosta_solmu(root)
+            call tulosta_kaikki(root%oikea)
+        end if
+    end subroutine tulosta_kaikki
+
     ! Palauttaa pisimmän matkan annetusta solmusta lehteen
     integer recursive function korkeus(s) result(palautus)
         implicit none

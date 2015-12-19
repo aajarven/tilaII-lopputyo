@@ -52,13 +52,20 @@ contains
         do while (.true.) ! luetaan rivejä kunnes löytyy sana
 
             if(alkukohta .eq. len(rivi)) then ! jos ollaan rivin lopussa,  viahdetaan riviä
-                read(1,"(a)", iostat=ios) rivi
+                do while(.true.) ! luetaan uusi rivi, kunnes löytyy epätyhjä
+                    read(1,"(a)", iostat=ios) rivi
 
-                if (ios /= 0) then
-                    sana = ''
-                    return
-                end if
-                
+                    if (ios /= 0) then
+                        sana = ''
+                        return
+                    end if
+
+                    if (len_trim(rivi) .gt. 0) then
+                        exit
+                    end if
+
+                end do
+
                 call tolower(rivi)
                 alkukohta = 1
                 edellinen = 1

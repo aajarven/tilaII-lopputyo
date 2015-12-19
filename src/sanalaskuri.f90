@@ -1,6 +1,6 @@
 ! Lukee tiedoston ja tulostaa tiedoston sanojen määrän aakkosjärjestyksessä. Yksittäisen sanan maksimipituus on 50
 ! merkkiä.
-program testi
+program sanalaskuri
     use avlpuu
     use tiedostonluku
     
@@ -19,9 +19,6 @@ program testi
         stop
     end if
 
-    !write(*,*) avaa(len("run/simple.txt"), "run/simple.txt")
-    !write(*,*) avaa(len("run/kalevala.txt"), "run/kalevala.txt")
-    !if (.not. avaa(len("run/shakespear.txt"), "run/shakespear.txt")) then
     if (.not. avaa(len_trim(tiedostonimi), tiedostonimi)) then
         stop
     end if
@@ -41,16 +38,4 @@ program testi
     end do
 
     call tulosta_kaikki(jp)   
-
-!    type (solmu), pointer :: jp
-!    type (solmu), target :: lapsi
-!    type (solmu), pointer :: lp
-!    type (solmu), pointer :: lisatty, lisatty2
-!    juuri = solmu(NULL(), NULL(), NULL(), 1, "a")
-!    jp => juuri
-!    lisatty => lisaa(1, "c", jp, NULL(), jp)
-!    lisatty => lisaa(1, "b", jp, NULL(), jp)
-!    write(*,*) jp%sana
-!    write(*,*) jp%vasen%sana
-!    write(*,*) jp%oikea%sana
 end program

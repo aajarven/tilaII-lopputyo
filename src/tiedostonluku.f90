@@ -1,7 +1,7 @@
 module tiedostonluku
 
     implicit none
-    character(len=1000), private :: rivi
+    character(len=10000), private :: rivi
     integer, private :: alkukohta
     character(len=*), private, parameter :: sanan_kirjaimet = "abcdefghijklmnopqrstuvwxyz1234567890-" ! merkit, joista sana voi koostua
 

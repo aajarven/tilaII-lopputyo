@@ -100,23 +100,23 @@ Anni Järvenpää \\ 014338836
 
 %%%%%%%%%%%%%%% Oleellinen sisältö alkaa%%%%%%%%%%%%%%%
 \section{Johdanto}
-Tavoitteena on laskea tiedostossa olevien sanojen toistokertojen määrä. Tällaisia niinkutsuttuja frekvenssilistoja käytetään paljon kielitieteessä ja erityisesti korpuslingvistiikassa. Niistä on hyötyä muun muassa tekstiä koskevien hypoteesien muodostamisessa sekä tehtyjen oletusten tarkastamisessa. \cite{kilitiede} %TODO needs moar bullshit
+Tavoitteena on laskea tiedostossa olevien sanojen toistokertojen määrä. Tällaisia niinkutsuttuja frekvenssilistoja käytetään paljon kielitieteessä ja erityisesti korpuslingvistiikassa. Niistä on hyötyä muun muassa tekstiä koskevien hypoteesien muodostamisessa sekä tehtyjen oletusten tarkastamisessa. \cite{kilitiede}
 
 Lisäksi eri teksteistä saatuja frekvenssilistoja voidaan vertailla toisiinsa ja tutkia näin tekstien eroja. Frekvenssilistoihin voidaan myös käyttää erilaisia tilastollisia analyysimenetelmiä. Frekvenssilistojen on muun muassa havaittu usein noudattavan Zipfin lakia, jonka mukaan sanan esiintymismäärä korpuksessa on kääntäen verrannollinen sen järjestyslukuun esiintymismäärän mukaan järjestetyssä frekvenssilistassa. \cite{kilitiede, wikizipf}
 
 \section{Menetelmät}
-Sanojen laskemisessa hyödynnetään binäärihakupuuta. Puu on solmuista koostuva tietorakenne, jossa jokaiseen solmuun voidaan tallentaa tietoa ja jokaisella solmulla on 1 tai 0 vanhempaa sekä $n$ lasta missä $n \in \mathbb{N}_0$. Puu voidaan esittää suunnattuina yhtenäisinä verkkoina, joissa jokaisesta solmusta on kaari jokaiseen lapseensa. \cite{cormen}
+Sanojen laskemisessa hyödynnetään binäärihakupuuta. Puu on solmuista koostuva tietorakenne, jossa jokaiseen solmuun voidaan tallentaa tietoa ja jokaisella solmulla on 1 tai 0 vanhempaa sekä $n$ lasta missä $n \in \mathbb{N}_0$. Puu voidaan esittää yhtenäisenä verkkona, joissa jokaisesta solmusta on kaari jokaiseen lapseensa. \cite{cormen}
 
-Puussa on aina tasan yksi solmu, jolla ei ole vanhempaa ja tätä solmua kutsutaan juureksi. Solmuja, joihin ei tule kaarta mistään toisesta solmusta kutsutaan lehdiksi. Solmun korkeus on kaarien määrä pisimmällä polulla solmusta lehteen. Usein puhutaan myös puun korkeudesta, jolla tarkoitetaan puun juurisolmun korkeutta. Esimerkiksi kuvassa \ref{yleinenpuu} on esitettynä puu, jonka solmuihin on tallennettu kokonaislukuja. Puun juurisolmun arvo on 5 ja lehtisolmuissa on arvot 1, 4, -1, 12, 6, 13 ja 3 sekä korkeus 3 (kaaret $5 \rightarrow 7$, $7 \rightarrow 11$ ja $11 \rightarrow 13$ tai $11 \rightarrow 3$). \cite{cormen}
+Puussa on aina tasan yksi solmu, jolla ei ole vanhempaa ja tätä solmua kutsutaan juureksi. Solmuja, joilla ei ole yhtään lasta kutsutaan lehdiksi. Solmun korkeus on kaarien määrä pisimmällä polulla solmusta lehteen. Usein puhutaan myös puun korkeudesta, jolla tarkoitetaan puun juurisolmun korkeutta. Esimerkiksi kuvassa \ref{yleinenpuu} on esitettynä puu, jonka solmuihin on tallennettu kokonaislukuja. \cite{cormen}
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=13cm]{graphs/puu.eps}
-\caption{Esimerkki puusta, johon on tallennettu kokonaislukuja.}
+\caption{Esimerkki puusta, johon on tallennettu kokonaislukuja. Puun juurisolmun arvo on 5 ja lehtisolmuissa on arvot 1, 4, -1, 12, 6, 13 ja 3 sekä sen korkeus 3 (kaaret $5 \rightarrow 7$, $7 \rightarrow 11$ ja $11 \rightarrow 13$ tai $11 \rightarrow 3$)}
 \label{yleinenpuu}
 \end{figure}
 
-Binäärihakupuussa jokaisella solmulla on 0, 1 tai 2 lasta ja kunkin solmun vasemmasta lapsesta lähtevässä alipuussa on vain arvoltaan solmun arvoa pienempiä arvoja ja oikeassa lapsessa lähtevässä alipuussa vain solmun arvoa suurempia arvoja. Näin etsittäessä tiettyä solmua, voidaan kunkin solmun kohdalla sulkea pois toinen solmun lapsista, jolloin joudutaan tutkimaan korkeintaan puun korkeuden verran solmuja. Eräs binäärihakupuu on esitetty kuvassa \ref{binaaripuu}. \cite{cormen}
+Binäärihakupuussa jokaisella solmulla on 0, 1 tai 2 lasta ja kunkin solmun vasemmasta lapsesta lähtevässä alipuussa on vain arvoltaan solmun arvoa pienempiä arvoja ja oikeassa lapsessa lähtevässä alipuussa vain solmun arvoa suurempia arvoja. Näin etsittäessä tiettyä solmua voidaan kunkin solmun kohdalla sulkea pois toinen solmun lapsista, jolloin joudutaan tutkimaan korkeintaan puun korkeuden verran solmuja. Eräs binäärihakupuu on esitetty kuvassa \ref{binaaripuu}. \cite{cormen}
 
 \begin{figure}[H]
 \centering
@@ -125,7 +125,7 @@ Binäärihakupuussa jokaisella solmulla on 0, 1 tai 2 lasta ja kunkin solmun vas
 \label{binaaripuu}
 \end{figure}
 
-Binäärihakupuussa solmun etsimisen aikavaativuus on $\mathcal{O}(h)$, missä $h$ on puun korkeus. Esimerkiksi kuvassa \ref{epatasapaino} esitetyssä binäärihakupuussa solmuun 5 kulkeminen edellyttää kaikkien solmujen läpikäyntiä, eli tässä tapauksessa binääripuu ei ole linkitettyä listaa parempi tietorakenne. Mikäli tälläistä tasapainottamatonta binääripuuta käyttäisi tekstiin, jonka sanat ovat aakkosjärjestyksessä (esimerkiksi sanakirjan hakemisto), on puuhun lisäämisen ja sieltä hakemisen aikavaativuus $\mathcal{O}(n)$ missä $n$ on puun solmujen määrä. \cite{cormen}
+Binäärihakupuussa solmun etsimisen aikavaativuus on $\mathcal{O}(h)$, missä $h$ on puun korkeus. Esimerkiksi kuvassa \ref{epatasapaino} esitetyssä binäärihakupuussa solmuun 5 kulkeminen edellyttää kaikkien solmujen läpikäyntiä, eli tässä tapauksessa binääripuu ei ole linkitettyä listaa parempi tietorakenne. Mikäli tälläistä tasapainottamatonta binääripuuta käyttäisi tekstiin, jonka sanat ovat valmiiksi aakkosjärjestyksessä (esimerkiksi sanakirjan hakemisto), syntyisi samantyyppinen puu kuin kuvassa \ref{epatasapaino}, jolloin puuhun lisäämisen ja sieltä hakemisen aikavaativuus olisi $\mathcal{O}(n)$ missä $n$ on puun solmujen määrä.~\cite{cormen}
 
 \begin{figure}
 \centering
@@ -134,9 +134,9 @@ Binäärihakupuussa solmun etsimisen aikavaativuus on $\mathcal{O}(h)$, missä $
 \label{epatasapaino}
 \end{figure}
 
-Siksi binäärihakupuu kannattaakin pyrkiä pitämään jollain tavalla tasapainossa siten, että puun tasapainottamiseen kuluva aika on pienempi kuin siitä saatava hyöty muiden operaatioiden aikavaativuuksissa. Vaihtoehtoisia toteutuksia on useita, muun muassa splay-puut, punamustat puut sekä AVL-puut. Tässä työssä käytetään AVL-puuta. \cite{cormen}
+Siksi binäärihakupuu kannattaakin pyrkiä pitämään jollain tavalla tasapainossa siten, että puun tasapainottamiseen kuluva aika on pienempi kuin siitä saatava hyöty muiden operaatioiden aikavaativuuksissa. Vaihtoehtoisia toteutuksia on useita, muun muassa splay-puut, punamustat puut sekä AVL-puut. Tässä työssä käytetään AVL-puuta.~\cite{cormen}
 
-AVL-puun katsotaan olevan tasapainossa jos minkään solmun oikean ja vasemman lapsen korkeuksien ero ei ole suurempi kuin yksi. Mikäli solmun lisääminen tai poistaminen johtaa epätasapainon syntymiseen, se korjataan erilaisilla kierroilla. Kuvassa \ref{avl} on nähtävillä eräs mahdollinen tapa järjestää kuvan \ref{binaaripuu} solmut siten, että puu täyttää AVL-puun tasapainoehdon. \cite{cormen}
+AVL-puun katsotaan olevan tasapainossa jos minkään solmun oikean ja vasemman lapsen korkeuksien ero ei ole suurempi kuin yksi. Mikäli solmun lisääminen tai poistaminen johtaa epätasapainon syntymiseen, se korjataan erilaisilla kierroilla. Kuvassa \ref{avl} on nähtävillä eräs mahdollinen tapa järjestää kuvan \ref{binaaripuu} solmut siten, että puu täyttää AVL-puun tasapainoehdon.~\cite{cormen}
 
 \begin{figure}
 \centering
@@ -159,7 +159,8 @@ Luettavan tiedoston voi asettaa tai sitä voi vaihtaa \texttt{avaa(pituus, tiedo
 
 Pääohjelma sanalaskuri ottaa komentoriviargumenttina polun tutkittavaan tiedostoon ja yrittää avata kyseisen tiedoston. Mikäli argumentteja ei ole, ohjelma tulostaa virheviestin ja suoritus lopetataan. Myös tiedoston avaamisen epäonnistuessa ohjelman suoritus pysäytetään. Onnistuneen tiedoston avaamisen jälkeen luetaan tiedoston ensimmäinen sana AVL-puun juureksi. Mikäli tämä sana on tyhjä, tiedetään tiedoston olevan tyhjä. Jos taas sana ei ole tyhjä, luetaan uusia sanoja ja lisätään niitä puuhun, kunnes \texttt{lue\_sana()}-funktio palauttaa tyhjän sanan, minkä jälkeen kutsutaan AVL-puun aliohjelmaa, joka tulostaa puun.
 
-Ohjelman kääntämiseksi kirjoitin makefilen, jolloin ohjelma voidaan kääntää yksinkertaisesti komennolla \texttt{make} ja tämän jälkeen ajaa muotoa \texttt{./bin/sanalaskuri path/to/file.txt} olevalla komennolla, missä \texttt{path/to/file.txt} on korvattu halutulla tiedostolla.
+Ohjelman kääntämiseksi kirjoitin makefilen, jolloin ohjelma voidaan kääntää yksinkertaisesti komennolla \texttt{make} ja tämän jälkeen ajaa muotoa \texttt{./bin/sanalaskuri path/to/\\file.txt} %TODO rumasti tehty
+olevalla komennolla, missä \texttt{path/to/file.txt} on korvattu halutulla tiedostolla.
 
 \section{Tulokset}
 Testasin ohjelman toimivuutta erilaisilla englanninkielisillä tekstikatkelmilla, muun muassa lähteestä \url{http://www.blindtextgenerator.com/lorem-ipsum} otetulla 2200 sanan mittaisella Kafka-katkelmalla jaettuna kuuteen kappaleeseen. Tähän käytetty \texttt{kafka.txt} löytyy run-hakemistosta. Osa outputista on esitetty listingissä \ref{output}. Annoin saman tekstin myös internetissä olevalle vastaavalle ohjelmalle (\url{http://www.online-utility.org/text/analyzer.jsp}), jonka tulokset ovat yhteneviä oman ohjelmani tulosten kanssa. On kuitenkin huomattava, että ohjelmat laskevat sanat hieman eri tavalla, sillä minun ohjelmani katsoo esimerkiksi heittomerkin katkaisevan sanan, jolloin omassa outputissani on erikseen esimerkiksi sanat "wouldn" ja "t".

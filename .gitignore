@@ -8,3 +8,4 @@ bin
 *.synctex.gz
 *.bbl
 *.blg
+*.fuse_hidden*

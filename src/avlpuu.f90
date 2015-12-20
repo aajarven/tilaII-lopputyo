@@ -7,11 +7,12 @@ module AVLpuu
     type :: solmu
         type (solmu), pointer :: vasen, oikea, vanhempi
         integer :: lukumaara = 1
-        character(len=50) :: sana !TODO voiko tehdä fiksummin?
+        character(len=50) :: sana
     end type solmu
 
 contains
 
+   ! tulostaa yksittäisen solmun muodossa "lkm  sana" 
     subroutine tulosta_solmu(s)
         implicit none
         type (solmu), pointer, intent(in) :: s
@@ -22,6 +23,7 @@ contains
         end if
     end subroutine
 
+    ! tulostaa kaikki solmut sisäjärjestyksessä
     recursive subroutine tulosta_kaikki(root)
         type (solmu), pointer, intent(in) :: root
         if (.not. associated(root)) then
@@ -98,15 +100,6 @@ contains
            lisatty => lisaa(pituus, sana, s%oikea, s, juuri)
        end if
     end function lisaa
-
-!    ! Lupaava alku funktiolle, jolla voisi poistaa solmun (ja jota tähän ei tarvita)
-!    recursive function poista(pituus, juuri, poistettava) result(palautus)
-!        integer, intent(in) ::pituus
-!        type(solmu), pointer, intent(in) :: juuri
-!        character(len=pituus), intent(in) :: poistettava
-!        type(solmu), pointer :: poisto
-!        type(solmu), pointer :: palautus
-
 
     ! Tasapainottaa puun lisäyksen jälkeen
     recursive subroutine tasapainota_lisays(s, juuri)

@@ -13,16 +13,17 @@ program sanalaskuri
     type (solmu), pointer :: jp
     jp => juuri
 
+    ! luetaan avattavan tiedoston nimi ja avataan se
     call get_command_argument(1, tiedostonimi)
     if (len_trim(tiedostonimi) .eq. 0) then
         write(*,*) "Anna argumenttina tutkittava tiedosto"
         stop
     end if
-
     if (.not. avaa(len_trim(tiedostonimi), tiedostonimi)) then
         stop
     end if
 
+    ! luetaan ensimmäinen sana puun juureksi, mikäli mahdollista
     sana = lue_sana()
     if (sana .eq. '') then
         write(*,*) "tyhjä tiedosto"
@@ -30,6 +31,8 @@ program sanalaskuri
     end if
     juuri = solmu(NULL(), NULL(), NULL(), 1, sana)
     jp => juuri
+    
+    ! luetaan tiedoston muut sanat ja lisätään ne puuhun
     sana = lue_sana()
     do while (.not. sana .eq. '')
         lisatty => lisaa(len(sana), sana, jp, NULL(), jp)
@@ -37,5 +40,6 @@ program sanalaskuri
         sana = lue_sana()
     end do
 
+    ! tulostetaan sanamäärät
     call tulosta_kaikki(jp)   
 end program

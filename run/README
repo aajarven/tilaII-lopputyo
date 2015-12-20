@@ -1,0 +1,2 @@
+Ohjelma voidaan kääntää suoraan komennolla make ja tämän jälkeen ajaa esimerkiksi komennolla ./bin/sanalaskuri run/farfar.txt, missä run/farfar.txt voidaan korvata polulla haluttuun tiedostoon. run-hakemistossa on valmiina kaksi tekstitiedostoa, farfar.txt ja kafka.txt.
+

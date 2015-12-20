@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.10.15)  20 DEC 2015 03:28
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.10.15)  20 DEC 2015 15:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -412,18 +412,7 @@ Package: wasysym 2003/10/30 v2.0 Wasy-2 symbol support package
 LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
 (Font)                  U/wasy/m/n --> U/wasy/b/n on input line 90.
 )
-(/usr/share/texlive/texmf-dist/tex/generic/epsf/epsf.sty
-This is `epsf.tex' v2.7.4 <14 February 2011>
-\epsffilein=\read1
-\epsfframemargin=\dimen123
-\epsfframethickness=\dimen124
-\epsfrsize=\dimen125
-\epsftmp=\dimen126
-\epsftsize=\dimen127
-\epsfxsize=\dimen128
-\epsfysize=\dimen129
-\pspoints=\dimen130
-) (/usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx.sty
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3names.sty
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3bootstrap.sty
@@ -486,12 +475,12 @@ Package: l3file 2013/10/13 v4596 L3 File and I/O operations
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3skip.sty
 Package: l3skip 2013/07/28 v4581 L3 Dimensions and skips
-\c_zero_dim=\dimen131
-\c_max_dim=\dimen132
-\l_tmpa_dim=\dimen133
-\l_tmpb_dim=\dimen134
-\g_tmpa_dim=\dimen135
-\g_tmpb_dim=\dimen136
+\c_zero_dim=\dimen123
+\c_max_dim=\dimen124
+\l_tmpa_dim=\dimen125
+\l_tmpb_dim=\dimen126
+\g_tmpa_dim=\dimen127
+\g_tmpb_dim=\dimen128
 \c_zero_skip=\skip55
 \c_max_skip=\skip56
 \l_tmpa_skip=\skip57
@@ -533,13 +522,13 @@ Package: l3box 2013/07/28 v4581 L3 Experimental boxes
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3coffins.sty
 Package: l3coffins 2013/12/14 v4624 L3 Coffin code layer
 \l__coffin_internal_box=\box35
-\l__coffin_internal_dim=\dimen137
-\l__coffin_offset_x_dim=\dimen138
-\l__coffin_offset_y_dim=\dimen139
-\l__coffin_x_dim=\dimen140
-\l__coffin_y_dim=\dimen141
-\l__coffin_x_prime_dim=\dimen142
-\l__coffin_y_prime_dim=\dimen143
+\l__coffin_internal_dim=\dimen129
+\l__coffin_offset_x_dim=\dimen130
+\l__coffin_offset_y_dim=\dimen131
+\l__coffin_x_dim=\dimen132
+\l__coffin_y_dim=\dimen133
+\l__coffin_x_prime_dim=\dimen134
+\l__coffin_y_prime_dim=\dimen135
 \c_empty_coffin=\box36
 \l__coffin_aligned_coffin=\box37
 \l__coffin_aligned_internal_coffin=\box38
@@ -548,9 +537,9 @@ Package: l3coffins 2013/12/14 v4624 L3 Coffin code layer
 \l__coffin_display_coffin=\box41
 \l__coffin_display_coord_coffin=\box42
 \l__coffin_display_pole_coffin=\box43
-\l__coffin_display_offset_dim=\dimen144
-\l__coffin_display_x_dim=\dimen145
-\l__coffin_display_y_dim=\dimen146
+\l__coffin_display_offset_dim=\dimen136
+\l__coffin_display_x_dim=\dimen137
+\l__coffin_display_y_dim=\dimen138
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3color.sty
 Package: l3color 2012/08/29 v4156 L3 Experimental color support
@@ -562,22 +551,22 @@ Package: l3luatex 2013/07/28 v4581 L3 Experimental LuaTeX-specific functions
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3candidates.sty
 Package: l3candidates 2014/01/06 v4643 L3 Experimental additions to l3kernel
-\l__box_top_dim=\dimen147
-\l__box_bottom_dim=\dimen148
-\l__box_left_dim=\dimen149
-\l__box_right_dim=\dimen150
-\l__box_top_new_dim=\dimen151
-\l__box_bottom_new_dim=\dimen152
-\l__box_left_new_dim=\dimen153
-\l__box_right_new_dim=\dimen154
+\l__box_top_dim=\dimen139
+\l__box_bottom_dim=\dimen140
+\l__box_left_dim=\dimen141
+\l__box_right_dim=\dimen142
+\l__box_top_new_dim=\dimen143
+\l__box_bottom_new_dim=\dimen144
+\l__box_left_new_dim=\dimen145
+\l__box_right_new_dim=\dimen146
 \l__box_internal_box=\box44
-\l__coffin_bounding_shift_dim=\dimen155
-\l__coffin_left_corner_dim=\dimen156
-\l__coffin_right_corner_dim=\dimen157
-\l__coffin_bottom_corner_dim=\dimen158
-\l__coffin_top_corner_dim=\dimen159
-\l__coffin_scaled_total_height_dim=\dimen160
-\l__coffin_scaled_width_dim=\dimen161
+\l__coffin_bounding_shift_dim=\dimen147
+\l__coffin_left_corner_dim=\dimen148
+\l__coffin_right_corner_dim=\dimen149
+\l__coffin_bottom_corner_dim=\dimen150
+\l__coffin_top_corner_dim=\dimen151
+\l__coffin_scaled_total_height_dim=\dimen152
+\l__coffin_scaled_width_dim=\dimen153
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2013/12/31 v4634 L3 Experimental document command parser
@@ -591,8 +580,8 @@ Package: siunitx 2013/07/31 v2.5s A comprehensive (SI) units package
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
 Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
-\col@sep=\dimen162
-\extrarowheight=\dimen163
+\col@sep=\dimen154
+\extrarowheight=\dimen155
 \NC@list=\toks26
 \extratabsurround=\skip61
 \backup@length=\skip62
@@ -602,7 +591,7 @@ Package: l3keys2e 2013/12/31 v4634 LaTeX2e option processing using LaTeX3 keys
 )
 Variant \tl_if_blank:VTF already defined; not changing it on line 50
 \l__siunitx_tmp_box=\box45
-\l__siunitx_tmp_dim=\dimen164
+\l__siunitx_tmp_dim=\dimen156
 \l__siunitx_tmp_int=\count135
 Variant \prop_get:NVNT already defined; not changing it on line 371
 Variant \prop_get:NVNF already defined; not changing it on line 372
@@ -618,8 +607,8 @@ Variant \prop_get:NVNTF already defined; not changing it on line 373
 \l__siunitx_group_min_int=\count144
 \l__siunitx_angle_marker_box=\box46
 \l__siunitx_angle_unit_box=\box47
-\l__siunitx_angle_marker_dim=\dimen165
-\l__siunitx_angle_unit_dim=\dimen166
+\l__siunitx_angle_marker_dim=\dimen157
+\l__siunitx_angle_unit_dim=\dimen158
 \l__siunitx_unit_int=\count145
 \l__siunitx_unit_denominator_int=\count146
 \l__siunitx_unit_numerator_int=\count147
@@ -629,15 +618,15 @@ Variant \prop_get:NVNTF already defined; not changing it on line 373
 \l__siunitx_number_product_int=\count151
 \c__siunitx_one_fill_skip=\skip63
 \l__siunitx_table_unit_align_skip=\skip64
-\l__siunitx_table_exponent_dim=\dimen167
-\l__siunitx_table_integer_dim=\dimen168
-\l__siunitx_table_mantissa_dim=\dimen169
-\l__siunitx_table_marker_dim=\dimen170
-\l__siunitx_table_result_dim=\dimen171
-\l__siunitx_table_uncert_dim=\dimen172
-\l__siunitx_table_fill_pre_dim=\dimen173
-\l__siunitx_table_fill_post_dim=\dimen174
-\l__siunitx_table_fill_mid_dim=\dimen175
+\l__siunitx_table_exponent_dim=\dimen159
+\l__siunitx_table_integer_dim=\dimen160
+\l__siunitx_table_mantissa_dim=\dimen161
+\l__siunitx_table_marker_dim=\dimen162
+\l__siunitx_table_result_dim=\dimen163
+\l__siunitx_table_uncert_dim=\dimen164
+\l__siunitx_table_fill_pre_dim=\dimen165
+\l__siunitx_table_fill_post_dim=\dimen166
+\l__siunitx_table_fill_mid_dim=\dimen167
 \l__siunitx_table_pre_box=\box48
 \l__siunitx_table_post_box=\box49
 \l__siunitx_table_mantissa_box=\box50
@@ -775,7 +764,7 @@ Variant \prop_get:NVNTF already defined; not changing it on line 373
 . Defining document command \__siunitx_bookmark_si:w with arg. spec. 'om' on
 . line 7271.
 .................................................
-\g__file_internal_ior=\read2
+\g__file_internal_ior=\read1
 
 (/usr/share/texmf/tex/latex/beamer/base/translator/translator.sty
 Package: translator 2010/06/12 ver 1.10
@@ -882,7 +871,7 @@ Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
-\@linkdim=\dimen176
+\@linkdim=\dimen168
 \Hy@linkcounter=\count152
 \Hy@pagecounter=\count153
 
@@ -910,10 +899,10 @@ Package hyperref Info: Bookmarks ON on input line 4688.
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
-\XeTeXLinkMargin=\dimen177
+\XeTeXLinkMargin=\dimen169
 \Fld@menulength=\count156
-\Field@Width=\dimen178
-\Fld@charsize=\dimen179
+\Field@Width=\dimen170
+\Fld@charsize=\dimen171
 Package hyperref Info: Hyper figures OFF on input line 6295.
 Package hyperref Info: Link nesting OFF on input line 6300.
 Package hyperref Info: Hyper index ON on input line 6303.
@@ -955,14 +944,14 @@ Package color Info: Driver file: pdftex.def on input line 130.
 \lst@gtempboxa=\box52
 \lst@token=\toks27
 \lst@length=\count163
-\lst@currlwidth=\dimen180
+\lst@currlwidth=\dimen172
 \lst@column=\count164
 \lst@pos=\count165
-\lst@lostspace=\dimen181
-\lst@width=\dimen182
+\lst@lostspace=\dimen173
+\lst@width=\dimen174
 \lst@newlines=\count166
 \lst@lineno=\count167
-\lst@maxwidth=\dimen183
+\lst@maxwidth=\dimen175
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
@@ -978,30 +967,30 @@ Package: listings 2013/08/26 1.5b (Carsten Heinz)
 (./raportti.aux)
 \openout1 = `raportti.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
  (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count170
-\scratchdimen=\dimen184
+\scratchdimen=\dimen176
 \scratchbox=\box54
 \nofMPsegments=\count171
 \nofMParguments=\count172
 \everyMPshowfont=\toks28
 \MPscratchCnt=\count173
-\MPscratchDim=\dimen185
+\MPscratchDim=\dimen177
 \MPnumerator=\count174
 \makeMPintoPDFobject=\count175
 \everyMPtoPDFconversion=\toks29
@@ -1139,1175 +1128,1175 @@ File: siunitx-abbreviations.cfg 2013/07/31 v2.5s siunitx: Abbreviated units
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \of with arg. spec. '' on line 95.
+. Defining document command \of with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \highlight with arg. spec. '' on line 95.
+. Defining document command \highlight with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \per with arg. spec. '' on line 95.
+. Defining document command \per with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \raiseto with arg. spec. '' on line 95.
+. Defining document command \raiseto with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \tothe with arg. spec. '' on line 95.
+. Defining document command \tothe with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \kilogram with arg. spec. '' on line 95.
+. Defining document command \kilogram with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \metre with arg. spec. '' on line 95.
+. Defining document command \metre with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \meter with arg. spec. '' on line 95.
+. Defining document command \meter with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \mole with arg. spec. '' on line 95.
+. Defining document command \mole with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \second with arg. spec. '' on line 95.
+. Defining document command \second with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \ampere with arg. spec. '' on line 95.
+. Defining document command \ampere with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \kelvin with arg. spec. '' on line 95.
+. Defining document command \kelvin with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \candela with arg. spec. '' on line 95.
+. Defining document command \candela with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \gram with arg. spec. '' on line 95.
+. Defining document command \gram with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \yocto with arg. spec. '' on line 95.
+. Defining document command \yocto with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \zepto with arg. spec. '' on line 95.
+. Defining document command \zepto with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \atto with arg. spec. '' on line 95.
+. Defining document command \atto with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \femto with arg. spec. '' on line 95.
+. Defining document command \femto with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \pico with arg. spec. '' on line 95.
+. Defining document command \pico with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \nano with arg. spec. '' on line 95.
+. Defining document command \nano with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \micro with arg. spec. '' on line 95.
+. Defining document command \micro with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \milli with arg. spec. '' on line 95.
+. Defining document command \milli with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \centi with arg. spec. '' on line 95.
+. Defining document command \centi with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \deci with arg. spec. '' on line 95.
+. Defining document command \deci with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \deca with arg. spec. '' on line 95.
+. Defining document command \deca with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \deka with arg. spec. '' on line 95.
+. Defining document command \deka with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \hecto with arg. spec. '' on line 95.
+. Defining document command \hecto with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \kilo with arg. spec. '' on line 95.
+. Defining document command \kilo with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \mega with arg. spec. '' on line 95.
+. Defining document command \mega with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \giga with arg. spec. '' on line 95.
+. Defining document command \giga with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \tera with arg. spec. '' on line 95.
+. Defining document command \tera with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \peta with arg. spec. '' on line 95.
+. Defining document command \peta with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \exa with arg. spec. '' on line 95.
+. Defining document command \exa with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \zetta with arg. spec. '' on line 95.
+. Defining document command \zetta with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \yotta with arg. spec. '' on line 95.
+. Defining document command \yotta with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \becquerel with arg. spec. '' on line 95.
+. Defining document command \becquerel with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \celsius with arg. spec. '' on line 95.
+. Defining document command \celsius with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \degreeCelsius with arg. spec. '' on line 95.
+. Defining document command \degreeCelsius with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \coulomb with arg. spec. '' on line 95.
+. Defining document command \coulomb with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \farad with arg. spec. '' on line 95.
+. Defining document command \farad with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \gray with arg. spec. '' on line 95.
+. Defining document command \gray with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \hertz with arg. spec. '' on line 95.
+. Defining document command \hertz with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \henry with arg. spec. '' on line 95.
+. Defining document command \henry with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \joule with arg. spec. '' on line 95.
+. Defining document command \joule with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \katal with arg. spec. '' on line 95.
+. Defining document command \katal with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \lumen with arg. spec. '' on line 95.
+. Defining document command \lumen with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \lux with arg. spec. '' on line 95.
+. Defining document command \lux with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \newton with arg. spec. '' on line 95.
+. Defining document command \newton with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \ohm with arg. spec. '' on line 95.
+. Defining document command \ohm with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \pascal with arg. spec. '' on line 95.
+. Defining document command \pascal with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \radian with arg. spec. '' on line 95.
+. Defining document command \radian with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \siemens with arg. spec. '' on line 95.
+. Defining document command \siemens with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \sievert with arg. spec. '' on line 95.
+. Defining document command \sievert with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \steradian with arg. spec. '' on line 95.
+. Defining document command \steradian with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \tesla with arg. spec. '' on line 95.
+. Defining document command \tesla with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \volt with arg. spec. '' on line 95.
+. Defining document command \volt with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \watt with arg. spec. '' on line 95.
+. Defining document command \watt with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \weber with arg. spec. '' on line 95.
+. Defining document command \weber with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \arcmin with arg. spec. '' on line 95.
+. Defining document command \arcmin with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \arcminute with arg. spec. '' on line 95.
+. Defining document command \arcminute with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \arcsecond with arg. spec. '' on line 95.
+. Defining document command \arcsecond with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \degree with arg. spec. '' on line 95.
+. Defining document command \degree with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \hectare with arg. spec. '' on line 95.
+. Defining document command \hectare with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \hour with arg. spec. '' on line 95.
+. Defining document command \hour with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \litre with arg. spec. '' on line 95.
+. Defining document command \litre with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \liter with arg. spec. '' on line 95.
+. Defining document command \liter with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \minute with arg. spec. '' on line 95.
+. Defining document command \minute with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \percent with arg. spec. '' on line 95.
+. Defining document command \percent with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \tonne with arg. spec. '' on line 95.
+. Defining document command \tonne with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \astronomicalunit with arg. spec. '' on line 95.
+. Defining document command \astronomicalunit with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \atomicmassunit with arg. spec. '' on line 95.
+. Defining document command \atomicmassunit with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \electronvolt with arg. spec. '' on line 95.
+. Defining document command \electronvolt with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \dalton with arg. spec. '' on line 95.
+. Defining document command \dalton with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \clight with arg. spec. '' on line 95.
+. Defining document command \clight with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \electronmass with arg. spec. '' on line 95.
+. Defining document command \electronmass with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \planckbar with arg. spec. '' on line 95.
+. Defining document command \planckbar with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \elementarycharge with arg. spec. '' on line 95.
+. Defining document command \elementarycharge with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \bohr with arg. spec. '' on line 95.
+. Defining document command \bohr with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \hartree with arg. spec. '' on line 95.
+. Defining document command \hartree with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \angstrom with arg. spec. '' on line 95.
+. Defining document command \angstrom with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \barn with arg. spec. '' on line 95.
+. Defining document command \barn with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \bel with arg. spec. '' on line 95.
+. Defining document command \bel with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \decibel with arg. spec. '' on line 95.
+. Defining document command \decibel with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \knot with arg. spec. '' on line 95.
+. Defining document command \knot with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \mmHg with arg. spec. '' on line 95.
+. Defining document command \mmHg with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \nauticalmile with arg. spec. '' on line 95.
+. Defining document command \nauticalmile with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \neper with arg. spec. '' on line 95.
+. Defining document command \neper with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \squared with arg. spec. '' on line 95.
+. Defining document command \squared with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \cubic with arg. spec. '' on line 95.
+. Defining document command \cubic with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \cubed with arg. spec. '' on line 95.
+. Defining document command \cubed with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \ssquare with arg. spec. '' on line 95.
+. Defining document command \ssquare with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \BAR with arg. spec. '' on line 95.
+. Defining document command \BAR with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \bbar with arg. spec. '' on line 95.
+. Defining document command \bbar with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \Day with arg. spec. '' on line 95.
+. Defining document command \Day with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \dday with arg. spec. '' on line 95.
+. Defining document command \dday with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \Gray with arg. spec. '' on line 95.
+. Defining document command \Gray with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \ggray with arg. spec. '' on line 95.
+. Defining document command \ggray with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \atomicmass with arg. spec. '' on line 95.
+. Defining document command \atomicmass with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \arcsec with arg. spec. '' on line 95.
+. Defining document command \arcsec with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \are with arg. spec. '' on line 95.
+. Defining document command \are with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \curie with arg. spec. '' on line 95.
+. Defining document command \curie with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \gal with arg. spec. '' on line 95.
+. Defining document command \gal with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \millibar with arg. spec. '' on line 95.
+. Defining document command \millibar with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \rad with arg. spec. '' on line 95.
+. Defining document command \rad with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \rem with arg. spec. '' on line 95.
+. Defining document command \rem with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \roentgen with arg. spec. '' on line 95.
+. Defining document command \roentgen with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \micA with arg. spec. '' on line 95.
+. Defining document command \micA with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \micmol with arg. spec. '' on line 95.
+. Defining document command \micmol with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \micl with arg. spec. '' on line 95.
+. Defining document command \micl with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \micL with arg. spec. '' on line 95.
+. Defining document command \micL with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \nanog with arg. spec. '' on line 95.
+. Defining document command \nanog with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \micg with arg. spec. '' on line 95.
+. Defining document command \micg with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \picm with arg. spec. '' on line 95.
+. Defining document command \picm with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \micm with arg. spec. '' on line 95.
+. Defining document command \micm with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \Sec with arg. spec. '' on line 95.
+. Defining document command \Sec with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \mics with arg. spec. '' on line 95.
+. Defining document command \mics with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \cmc with arg. spec. '' on line 95.
+. Defining document command \cmc with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \dmc with arg. spec. '' on line 95.
+. Defining document command \dmc with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \cms with arg. spec. '' on line 95.
+. Defining document command \cms with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \centimetrecubed with arg. spec. '' on line 95.
+. Defining document command \centimetrecubed with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \centimetresquared with arg. spec. '' on line 95.
+. Defining document command \centimetresquared with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \cubiccentimetre with arg. spec. '' on line 95.
+. Defining document command \cubiccentimetre with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \cubicdecimetre with arg. spec. '' on line 95.
+. Defining document command \cubicdecimetre with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \squarecentimetre with arg. spec. '' on line 95.
+. Defining document command \squarecentimetre with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \squaremetre with arg. spec. '' on line 95.
+. Defining document command \squaremetre with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \squarekilometre with arg. spec. '' on line 95.
+. Defining document command \squarekilometre with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \parsec with arg. spec. '' on line 95.
+. Defining document command \parsec with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \lightyear with arg. spec. '' on line 95.
+. Defining document command \lightyear with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \gmol with arg. spec. '' on line 95.
+. Defining document command \gmol with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \kgmol with arg. spec. '' on line 95.
+. Defining document command \kgmol with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \lbmol with arg. spec. '' on line 95.
+. Defining document command \lbmol with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \molar with arg. spec. '' on line 95.
+. Defining document command \molar with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \Molar with arg. spec. '' on line 95.
+. Defining document command \Molar with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \torr with arg. spec. '' on line 95.
+. Defining document command \torr with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \gon with arg. spec. '' on line 95.
+. Defining document command \gon with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \micron with arg. spec. '' on line 95.
+. Defining document command \micron with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \mrad with arg. spec. '' on line 95.
+. Defining document command \mrad with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \gauss with arg. spec. '' on line 95.
+. Defining document command \gauss with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \eVperc with arg. spec. '' on line 95.
+. Defining document command \eVperc with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \nanobarn with arg. spec. '' on line 95.
+. Defining document command \nanobarn with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \picobarn with arg. spec. '' on line 95.
+. Defining document command \picobarn with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \femtobarn with arg. spec. '' on line 95.
+. Defining document command \femtobarn with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \attobarn with arg. spec. '' on line 95.
+. Defining document command \attobarn with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \zeptobarn with arg. spec. '' on line 95.
+. Defining document command \zeptobarn with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \yoctobarn with arg. spec. '' on line 95.
+. Defining document command \yoctobarn with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \nb with arg. spec. '' on line 95.
+. Defining document command \nb with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \pb with arg. spec. '' on line 95.
+. Defining document command \pb with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \fb with arg. spec. '' on line 95.
+. Defining document command \fb with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \ab with arg. spec. '' on line 95.
+. Defining document command \ab with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \zb with arg. spec. '' on line 95.
+. Defining document command \zb with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \yb with arg. spec. '' on line 95.
+. Defining document command \yb with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \A with arg. spec. '' on line 95.
+. Defining document command \A with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \pA with arg. spec. '' on line 95.
+. Defining document command \pA with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \nA with arg. spec. '' on line 95.
+. Defining document command \nA with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \uA with arg. spec. '' on line 95.
+. Defining document command \uA with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \mA with arg. spec. '' on line 95.
+. Defining document command \mA with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \kA with arg. spec. '' on line 95.
+. Defining document command \kA with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \Hz with arg. spec. '' on line 95.
+. Defining document command \Hz with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \mHz with arg. spec. '' on line 95.
+. Defining document command \mHz with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \kHz with arg. spec. '' on line 95.
+. Defining document command \kHz with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \MHz with arg. spec. '' on line 95.
+. Defining document command \MHz with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \GHz with arg. spec. '' on line 95.
+. Defining document command \GHz with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \THz with arg. spec. '' on line 95.
+. Defining document command \THz with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \mol with arg. spec. '' on line 95.
+. Defining document command \mol with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \fmol with arg. spec. '' on line 95.
+. Defining document command \fmol with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \pmol with arg. spec. '' on line 95.
+. Defining document command \pmol with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \nmol with arg. spec. '' on line 95.
+. Defining document command \nmol with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \umol with arg. spec. '' on line 95.
+. Defining document command \umol with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \mmol with arg. spec. '' on line 95.
+. Defining document command \mmol with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \kmol with arg. spec. '' on line 95.
+. Defining document command \kmol with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \V with arg. spec. '' on line 95.
+. Defining document command \V with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \pV with arg. spec. '' on line 95.
+. Defining document command \pV with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \nV with arg. spec. '' on line 95.
+. Defining document command \nV with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \uV with arg. spec. '' on line 95.
+. Defining document command \uV with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \mV with arg. spec. '' on line 95.
+. Defining document command \mV with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \kV with arg. spec. '' on line 95.
+. Defining document command \kV with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \hl with arg. spec. '' on line 95.
+. Defining document command \hl with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \ml with arg. spec. '' on line 95.
+. Defining document command \ml with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \ul with arg. spec. '' on line 95.
+. Defining document command \ul with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \hL with arg. spec. '' on line 95.
+. Defining document command \hL with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \mL with arg. spec. '' on line 95.
+. Defining document command \mL with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \uL with arg. spec. '' on line 95.
+. Defining document command \uL with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \fg with arg. spec. '' on line 95.
+. Defining document command \fg with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \pg with arg. spec. '' on line 95.
+. Defining document command \pg with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \ug with arg. spec. '' on line 95.
+. Defining document command \ug with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \mg with arg. spec. '' on line 95.
+. Defining document command \mg with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \g with arg. spec. '' on line 95.
+. Defining document command \g with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \kg with arg. spec. '' on line 95.
+. Defining document command \kg with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \amu with arg. spec. '' on line 95.
+. Defining document command \amu with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \W with arg. spec. '' on line 95.
+. Defining document command \W with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \uW with arg. spec. '' on line 95.
+. Defining document command \uW with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \mW with arg. spec. '' on line 95.
+. Defining document command \mW with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \kW with arg. spec. '' on line 95.
+. Defining document command \kW with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \MW with arg. spec. '' on line 95.
+. Defining document command \MW with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \GW with arg. spec. '' on line 95.
+. Defining document command \GW with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \J with arg. spec. '' on line 95.
+. Defining document command \J with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \kJ with arg. spec. '' on line 95.
+. Defining document command \kJ with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \eV with arg. spec. '' on line 95.
+. Defining document command \eV with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \meV with arg. spec. '' on line 95.
+. Defining document command \meV with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \keV with arg. spec. '' on line 95.
+. Defining document command \keV with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \MeV with arg. spec. '' on line 95.
+. Defining document command \MeV with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \GeV with arg. spec. '' on line 95.
+. Defining document command \GeV with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \TeV with arg. spec. '' on line 95.
+. Defining document command \TeV with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \kWh with arg. spec. '' on line 95.
+. Defining document command \kWh with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \m with arg. spec. '' on line 95.
+. Defining document command \m with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \nm with arg. spec. '' on line 95.
+. Defining document command \nm with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \um with arg. spec. '' on line 95.
+. Defining document command \um with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \mm with arg. spec. '' on line 95.
+. Defining document command \mm with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \cm with arg. spec. '' on line 95.
+. Defining document command \cm with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \dm with arg. spec. '' on line 95.
+. Defining document command \dm with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \km with arg. spec. '' on line 95.
+. Defining document command \km with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \K with arg. spec. '' on line 95.
+. Defining document command \K with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \dB with arg. spec. '' on line 95.
+. Defining document command \dB with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \F with arg. spec. '' on line 95.
+. Defining document command \F with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \fF with arg. spec. '' on line 95.
+. Defining document command \fF with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \pF with arg. spec. '' on line 95.
+. Defining document command \pF with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \N with arg. spec. '' on line 95.
+. Defining document command \N with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \mN with arg. spec. '' on line 95.
+. Defining document command \mN with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \kN with arg. spec. '' on line 95.
+. Defining document command \kN with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \MN with arg. spec. '' on line 95.
+. Defining document command \MN with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \Pa with arg. spec. '' on line 95.
+. Defining document command \Pa with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \kPa with arg. spec. '' on line 95.
+. Defining document command \kPa with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \MPa with arg. spec. '' on line 95.
+. Defining document command \MPa with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \GPa with arg. spec. '' on line 95.
+. Defining document command \GPa with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \mohm with arg. spec. '' on line 95.
+. Defining document command \mohm with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \kohm with arg. spec. '' on line 95.
+. Defining document command \kohm with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \Mohm with arg. spec. '' on line 95.
+. Defining document command \Mohm with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \s with arg. spec. '' on line 95.
+. Defining document command \s with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \as with arg. spec. '' on line 95.
+. Defining document command \as with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \fs with arg. spec. '' on line 95.
+. Defining document command \fs with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \ps with arg. spec. '' on line 95.
+. Defining document command \ps with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \ns with arg. spec. '' on line 95.
+. Defining document command \ns with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \us with arg. spec. '' on line 95.
+. Defining document command \us with arg. spec. '' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \ms with arg. spec. '' on line 95.
+. Defining document command \ms with arg. spec. '' on line 94.
 .................................................
 \AtBeginShipoutBox=\box55
-Package hyperref Info: Link coloring OFF on input line 95.
+Package hyperref Info: Link coloring OFF on input line 94.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -2316,9 +2305,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count176
 )
-LaTeX Info: Redefining \ref on input line 95.
-LaTeX Info: Redefining \pageref on input line 95.
-LaTeX Info: Redefining \nameref on input line 95.
+LaTeX Info: Redefining \ref on input line 94.
+LaTeX Info: Redefining \pageref on input line 94.
+LaTeX Info: Redefining \nameref on input line 94.
 
 (./raportti.out) (./raportti.out)
 \@outlinefile=\write3
@@ -2326,38 +2315,38 @@ LaTeX Info: Redefining \nameref on input line 95.
 
 \c@lstlisting=\count177
 \c__siunitx_mathsf_int=\count178
-LaTeX Font Info:    Try loading font information for U+msa on input line 95.
+LaTeX Font Info:    Try loading font information for U+msa on input line 94.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 95.
+LaTeX Font Info:    Try loading font information for U+msb on input line 94.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+wasy on input line 95.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 94.
 
 (/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 )
 \c__siunitx_mathtt_int=\count179
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 97.
+(babel)             in language  on input line 96.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 97.
+(babel)             in language  on input line 96.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 102.
+(babel)             in language  on input line 101.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 102.
+(babel)             in language  on input line 101.
  [0]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 105.
+(babel)             in language  on input line 104.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 108.
+(babel)             in language  on input line 109.
 Package epstopdf Info: Source file: <graphs/puu.eps>
 (epstopdf)                    date: 2015-12-20 03:11:23
 (epstopdf)                    size: 9955 bytes
@@ -2366,79 +2355,93 @@ Package epstopdf Info: Source file: <graphs/puu.eps>
 (epstopdf)                    size: 5561 bytes
 (epstopdf)             Command: <repstopdf --outfile=graphs/puu-eps-converted-t
 o.pdf graphs/puu.eps>
-(epstopdf)             \includegraphics on input line 115.
+(epstopdf)             \includegraphics on input line 116.
 Package epstopdf Info: Output file is already uptodate.
 
-<graphs/puu-eps-converted-to.pdf, id=39, 368.37625pt x 206.7725pt>
+<graphs/puu-eps-converted-to.pdf, id=41, 368.37625pt x 206.7725pt>
 File: graphs/puu-eps-converted-to.pdf Graphic file (type pdf)
 
 <use graphs/puu-eps-converted-to.pdf>
-Package pdftex.def Info: graphs/puu-eps-converted-to.pdf used on input line 115
+Package pdftex.def Info: graphs/puu-eps-converted-to.pdf used on input line 116
 .
 (pdftex.def)             Requested size: 369.88582pt x 207.61754pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<kuvat/binaaripuu.png, id=44, 815.045pt x 476.78125pt>
+File: kuvat/binaaripuu.png Graphic file (type png)
+
+<use kuvat/binaaripuu.png>
+Package pdftex.def Info: kuvat/binaaripuu.png used on input line 125.
+(pdftex.def)             Requested size: 426.79134pt x 249.65913pt.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 121.
+(babel)             in language  on input line 129.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 121.
+(babel)             in language  on input line 129.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.121 
-       [1 <./graphs/puu-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <graphs/binaaripuu.eps>
-(epstopdf)                    date: 2015-12-20 03:28:31
-(epstopdf)                    size: 9822 bytes
-(epstopdf)             Output file: <graphs/binaaripuu-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-12-20 03:22:42
-(epstopdf)                    size: 5481 bytes
-(epstopdf)             Command: <repstopdf --outfile=graphs/binaaripuu-eps-conv
-erted-to.pdf graphs/binaaripuu.eps>
-(epstopdf)             \includegraphics on input line 124.
-runsystem(repstopdf --outfile=graphs/binaaripuu-eps-converted-to.pdf graphs/bin
-aaripuu.eps)...executed safely (allowed).
+l.129 
+       [1] <kuvat/binaaripuu-epatasapaino.png, id=62, 815.045pt x 476.78125pt>
+File: kuvat/binaaripuu-epatasapaino.png Graphic file (type png)
 
-Package epstopdf Info: Result file: <graphs/binaaripuu-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-12-20 03:28:34
-(epstopdf)                    size: 5481 bytes.
+<use kuvat/binaaripuu-epatasapaino.png>
+Package pdftex.def Info: kuvat/binaaripuu-epatasapaino.png used on input line 1
+34.
+(pdftex.def)             Requested size: 426.79134pt x 249.65913pt.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 140.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 140.
+ [2 <./graphs/puu-eps-converted-to.pdf> <./kuvat/binaaripuu.png>] <kuvat/avlpuu
+.png, id=78, 815.045pt x 476.78125pt>
+File: kuvat/avlpuu.png Graphic file (type png)
 
-<graphs/binaaripuu-eps-converted-to.pdf, id=56, 209.78375pt x 311.1625pt>
-File: graphs/binaaripuu-eps-converted-to.pdf Graphic file (type pdf)
-
-<use graphs/binaaripuu-eps-converted-to.pdf>
-Package pdftex.def Info: graphs/binaaripuu-eps-converted-to.pdf used on input l
-ine 124.
-(pdftex.def)             Requested size: 199.16928pt x 295.41753pt.
+<use kuvat/avlpuu.png>
+Package pdftex.def Info: kuvat/avlpuu.png used on input line 145.
+(pdftex.def)             Requested size: 426.79134pt x 249.65913pt.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 133.
+(babel)             in language  on input line 151.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 136.
+(babel)             in language  on input line 157.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 138.
+(babel)             in language  on input line 157.
+ [3 <./kuvat/binaaripuu-epatasapaino.png>]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 150.
+(babel)             in language  on input line 163.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 150.
- [2 <./graphs/binaaripuu-eps-converted-to.pdf>] (./raportti.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 161.
+(babel)             in language  on input line 163.
+ [4 <./kuvat/avlpuu.png>]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 161.
+(babel)             in language  on input line 164.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 161.
- [3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 161.
+(babel)             in language  on input line 166.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 171.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 171.
+ [5] (./raportti.bbl)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 182.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 182.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 182.
+ [6]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 182.
  (./raportti.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 161.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 161.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 182.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 182.
 Package rerunfilecheck Info: File `raportti.out' has not changed.
 (rerunfilecheck)             Checksum: 4A443D6970AABD16C0C980C4A145B51F;235.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 161.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 182.
  ) 
 Here is how much of TeX's memory you used:
- 17910 strings out of 494424
- 343286 string characters out of 6165345
- 386580 words of memory out of 5000000
- 20890 multiletter control sequences out of 15000+600000
+ 17864 strings out of 494424
+ 342703 string characters out of 6165345
+ 387524 words of memory out of 5000000
+ 20838 multiletter control sequences out of 15000+600000
  16246 words of font info for 65 fonts, out of 8000000 for 9000
  372 hyphenation exceptions out of 8191
  39i,13n,47p,10456b,879s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2451,10 +2454,10 @@ onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/symbols/msbm10.pfb>
-Output written on raportti.pdf (5 pages, 92919 bytes).
+Output written on raportti.pdf (8 pages, 136060 bytes).
 PDF statistics:
- 111 PDF objects out of 1000 (max. 8388607)
- 90 compressed objects within 1 object stream
- 15 named destinations out of 1000 (max. 500000)
- 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 144 PDF objects out of 1000 (max. 8388607)
+ 115 compressed objects within 2 object streams
+ 21 named destinations out of 1000 (max. 500000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

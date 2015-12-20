@@ -1,0 +1,23 @@
+digraph G{
+  nodesep=0.3;
+  ranksep=0.2;
+  margin=0.1;
+  node [shape=circle];
+  edge [arrowsize=0];
+  graph [ordering="out"];
+  nil1 [label="",width=.1,style=invis]
+  nil2 [label="",width=.1,style=invis]
+  5 -> 7;
+  5 -> 20;
+  7 -> 1;
+  7 -> 8;
+	1 -> -1;
+	1 -> 4;
+	4 -> 3:
+	4 -> 6;
+	20 -> 13;
+	20 -> nil1 [style=invis];
+	13 -> 11;
+	11 -> nil2 [style=invis]
+	11 -> 12;
+}

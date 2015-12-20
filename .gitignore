@@ -2,3 +2,7 @@
 *.mod
 *.swp
 bin
+*.aux
+*.log
+*.out
+*.synctex.gz

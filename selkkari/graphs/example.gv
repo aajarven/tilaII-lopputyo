@@ -1,0 +1,20 @@
+graph {
+  node [shape = circle, fontsize = 24, label=" "];
+  S -- {L, R, RR}
+  L -- {LC, LR}
+  LR -- {LLL, LLR}
+  R -- {RL}
+  RR -- {RRA, RRB}
+  R -- NINNI [style = "invis"]
+  NINNI [style = "invis"]
+  RR -- NANNU [style = "invis"]
+  NANNU [style = "invis"]
+
+  LLR -- G [style = dotted, minlen = 2];
+  G[label = "Δ"];
+  LLR[label = "Δ"];
+  LR[label = "Δ"];
+  L[label = "Δ"];
+  S[label = "Δ"];
+}
+

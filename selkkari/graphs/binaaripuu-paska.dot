@@ -25,31 +25,25 @@ digraph G{
  	n17 [label="10",width=.1,style=invis]
  	n18 [label="10",width=.1,style=invis]
  	n19 [label="10",width=.1,style=invis]
+ 	n20 [label="10",width=.1,style=invis]
+ 	n21 [label="10",width=.1,style=invis]
 
-	5 -> {7, 20}
-	7 -> {1, 8}
-	1 -> {-1, 4}
-	-1 -> n1 [style=invis]
-	-1 -> n2 [style=invis] 
-	4 -> {3, 6}
-	8 -> n3[style=invis] 
-	8 -> n6 [style=invis]
-	n3 -> n4 [style=invis] 
-	n3 -> n5 [style=invis]
-	n6 -> n7 [style=invis] 
-	n6 -> n8 [style=invis] 
-	20 -> 13
-	20 -> n13 [style=invis] 
-	13 -> 11
-	13 -> n10 [style=invis] 
-	11 -> n9 [style=invis] 
-	11 -> 12
-	n10 -> n11 [style=invis] 
-	n10 -> n12 [style=invis] 
-	n13 -> n14 [style=invis] 
-	n13 -> n17 [style=invis] 
-	n14 -> n15 [style=invis] 
-	n14 -> n16 [style=invis] 
-	n17 -> n18 [style=invis] 
-	n17 -> n19 [style=invis] 
+	5 -> {7, 20};
+	7 -> {1, 8};
+	1 -> {-1, 4};
+	4 -> {3, 6};
+	20 -> 13;
+	20 -> n1 ;
+	n1 -> nil6 ;
+	n1 -> nil7 ;
+	n6 -> nil8 ;
+	n6 -> nil9 ;
+	n16 -> n20 ;
+	n16 -> n21 ;
+	13 -> 11;
+	13 -> n2 ;
+	n2 -> nil4 ;
+	n2 -> nil5 ; 
+	11 -> n3 ;
+	11 -> 12;
 }

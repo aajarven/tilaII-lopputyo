@@ -44,9 +44,7 @@
 \definecolor{Background}{rgb}{0.98,0.98,0.98}
 
 \lstset{
-  literate={ö}{{\"o}}1
-           {ä}{{\"a}}1
-           {ü}{{\"u}}1
+  basicstyle=\footnotesize
 }
 \lstdefinestyle{python}{
 numbers=left,
@@ -155,7 +153,7 @@ Lisäksi toteutin funktiot tietyn sanan sisältävän solmun etsimiseksi puusta,
 
 Tulosten näyttämiseksi solmulla on myös aliohjelma, joka tulostaa solmuun tallennetun sanan sekä sen lukumäärät. Koko puun tulostamiseksi kirjoitin lisäksi aliohjelman, joka kutsuu edellistä aliohjelmaa kaikille solmusta lähtevän alipuun solmuille, jolloin kaikki puun sanat saadaan tulostettua. Kun solmut tulostetaan sisäjärjestyksessä (ensin vasen lapsi rekursiivisesti, sitten solmu itse, viimeiseksi oikea lapsi rekursiivisesti), tulostuvat solmut aakkosjärjestyksessä.
 
-Tiedostonlukumoduuli lukee avattua tiedostoa rivi (maksimipituus 10~000 merkkiä) kerrallaan ja palauttaa aina funktiota \texttt{lue\_sana()} kutsuttaessa seuraavan sanan tiedostossa. Mikäli rivi loppuu, katsotaan myös sanan loppuvan ja lukeminen aloitetaan seuraavan sanan kohdalla seuraavalta riviltä. Sanoiksi katsotaan yhtenäiset korkeintaan 50 merkin mittaiset merkkijonot, jotka voivat sisältää isoja tai pieniä kirjaimia a-z, numeroita 0-9 ja väliviivoja (-). Kaikkien muiden merkkien katsotaan olevan sanaerottimia eikä niitä käsitellä mitenkään. Ennen sanan palauttamista sen isot kirjaimet muutetaan pieniksi. Mikäli tiedosto on tyhjä tai luettu loppuun, \texttt{lue\_sana()} palauttaa tyhjän merkkijonon.
+Tiedostonlukumoduuli lukee avattua tiedostoa rivi (maksimipituus 10~000 merkkiä, pidempiä rivejä sisältäviä tiedostojen kohdalla ohjelman toimintaa ei ole spesifioitu) kerrallaan ja palauttaa aina funktiota \texttt{lue\_sana()} kutsuttaessa seuraavan sanan tiedostossa. Mikäli rivi loppuu, katsotaan myös sanan loppuvan ja lukeminen aloitetaan seuraavan sanan kohdalla seuraavalta riviltä. Sanoiksi katsotaan yhtenäiset korkeintaan 50 merkin mittaiset merkkijonot, jotka voivat sisältää isoja tai pieniä kirjaimia a-z, numeroita 0-9 ja väliviivoja (-). Kaikkien muiden merkkien katsotaan olevan sanaerottimia eikä niitä käsitellä mitenkään. Ennen sanan palauttamista sen isot kirjaimet muutetaan pieniksi. Mikäli tiedosto on tyhjä tai luettu loppuun, \texttt{lue\_sana()} palauttaa tyhjän merkkijonon.
 
 Luettavan tiedoston voi asettaa tai sitä voi vaihtaa \texttt{avaa(pituus, tiedostonimi)}-\-funktiolla, joka sulkee vanhan tiedoston mikäli sellainen on auki ja avaa sen jälkeen uuden tiedoston käyttäen polkuna annettua tiedostonimeä. Funktio palauttaa true mikäli tiedoston avaaminen onnistuu ja false mikäli ei onnistu. Jälkimmäisessä tapauksessa ohjelma tulostaa myös virheviestin, joka kertoo, mikä iostatin arvo oli. Samalla funktiolla voi myös siirtää lukukohdan takaisin tiedoston alkuun avaamalla jo auki olevan tiedoston uudelleen.
 
@@ -164,12 +162,51 @@ Pääohjelma sanalaskuri ottaa komentoriviargumenttina polun tutkittavaan tiedos
 Ohjelman kääntämiseksi kirjoitin makefilen, jolloin ohjelma voidaan kääntää yksinkertaisesti komennolla \texttt{make} ja tämän jälkeen ajaa muotoa \texttt{./bin/sanalaskuri path/to/file.txt} olevalla komennolla, missä \texttt{path/to/file.txt} on korvattu halutulla tiedostolla.
 
 \section{Tulokset}
+Testasin ohjelman toimivuutta erilaisilla englanninkielisillä tekstikatkelmilla, muun muassa lähteestä \url{http://www.blindtextgenerator.com/lorem-ipsum} otetulla 2200 sanan mittaisella Kafka-katkelmalla jaettuna kuuteen kappaleeseen. Tähän käytetty \texttt{kafka.txt} löytyy run-hakemistosta. Osa outputista on esitetty listingissä \ref{output}. Annoin saman tekstin myös internetissä olevalle vastaavalle ohjelmalle (\url{http://www.online-utility.org/text/analyzer.jsp}), jonka tulokset ovat yhteneviä oman ohjelmani tulosten kanssa. On kuitenkin huomattava, että ohjelmat laskevat sanat hieman eri tavalla, sillä minun ohjelmani katsoo esimerkiksi heittomerkin katkaisevan sanan, jolloin omassa outputissani on erikseen esimerkiksi sanat "wouldn" ja "t".
 
+\begin{lstlisting}[float,
+		label={output},
+		caption={Output, kun sanalaskurille annetaan tiedosto \texttt{run/kafka.txt}},
+		xleftmargin=6.5cm]
+10   -                                                 
+55   a                                                 
+3    able                                              
+13   about                                             
+3    above                                             
+2    accept                                            
+2    accuse                                            
+2    after                                             
+4    ago                                               
+4    alarm                                             
+14   all                                               
+3    although 
+...
+2    window                                            
+19   with                                              
+3    woke                                              
+2    workshy                                           
+2    worries                                           
+18   would                                             
+2    wouldn                                            
+2    wrong                                             
+4    years                                             
+2    yes                                               
+2    yet                                               
+8    you                                               
+6    your
+\end{lstlisting}
 
+Ohjelman aika- ja tilavaativuutta tarkasteltaessa merkittäviä ovat tiedostonluvun, puuhun lisäämisen ja puun tulostamisen aikavaativuudet. Tiedostoa luettaessa luetaan kukin rivi kerran muistiin ja tämän jälkeen muistiin luettu rivi käydään läpi kerran, eli kokonaisaikavaativuus on $\mathcal{O}(n)$ missä $n$ on tiedoston sanojen määrä. Näin voidaan sanoa, koska sanan pituudella on eksplisiittinen yläraja (50 merkkiä), jolloin $\mathcal{O}(m) = \mathcal{O}(n)$ missä $m$ on tiedoston merkkimäärä.
+
+Solmun lisääminen AVL-puuhun on huonoimmassa tapauksessa (mikään sana ei esiinny tiedostossa kahdesti, jolloin puuhun tulee yhtä monta solmua kuin tiedostossa on sanoja) aikavaativuudeltaan $\mathcal{O}(\log{n})$. Puuta tulostettaessa käydään läpi jokainen solmu, jolloin aikavaativuus on pahimmassa tapauksessa $\mathcal{O}(n)$. Nämä operaatiot suoritetaan peräkkäin, jolloin koko ohjelman aikavaativuus on $\mathcal{O}(n)$. \cite{cormen}
+
+Tiedostonluku on vakiotilainen operaatio, sillä tiedostosta on muistissa korkeintaan 10~000 merkin osio. Puun tilavaativuus puolestaan on pahimmassa tapauksessa $\mathcal{O}(n)$. Näin ollen ohjelman tilavaativuus on $\mathcal{O}(n)$.
 
 \section{Johtopäätökset}
-% voishan sen poistonkin tehä
-% sanan pituus puussa kovakoodattu
+Toteutuksen suurin heikkous on, että yli 10~000 merkin rivit ja 50 merkin sanat katkaistaan, mistä aiheutuu virhettä tuloksiin, mikäli tälläisiä esiintyy tekstissä. Nämä eivät kuitenkaan ole luonnollisissa kielissä tyypillisiä, joten yleensä tästä ei aiheudu ongelmia. Nämä maksimipituuksia edustavat vakiot on tällä hetkellä kovakoodattu taikalukuina, ja olisi hieman elegantimpaa laittaa ne vain yhteen paikkaan muuttujina, jolloin ohjelman muuttaminen olisi helpompaa ja luettavuus paranisi hieman.
+
+Lisäksi solmun poistamista AVL-puusta ei ole toteutettu. Kun puuta käytetään ainoastaan sanojen laskemiseen, ei tästä ole haittaa, sillä teksti ei voi sisältää "negatiivisia sanoja", mutta mikäli samaa moduulia halutaan käyttää johonkin muuhun, pitää poisto-operaatio todennäköisesti toteuttaa.
+
 
 %%%%% Sisältö loppuu, lähdeluettelo %%%%%
 \newpage

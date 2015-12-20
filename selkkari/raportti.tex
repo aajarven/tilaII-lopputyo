@@ -10,6 +10,7 @@
 \usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
 \usepackage{float}
 \usepackage{ wasysym }
+\usepackage{epsf} 
 
 % hyödyllisiä paketteja:
 \usepackage{siunitx}\sisetup{per=frac} % SI-yksiköitä.
@@ -102,9 +103,31 @@ Anni Järvenpää \\ 014338836
 
 %%%%%%%%%%%%%%% Oleellinen sisältö alkaa%%%%%%%%%%%%%%%
 \section{Johdanto}
-
+Tavoitteena on laskea tiedostossa olevien sanojen toistokertojen määrä. Tällaisia niinkutsuttuja frekvenssilistoja käytetään paljon kielitieteessä ja erityisesti korpuslingvistiikassa. Niistä on hyötyä muun muassa tekstiä koskevien hypoteesien muodostamisessa sekä tehtyjen oletusten tarkastamisessa. Lisäksi eri teksteistä saatuja frekvenssilistoja voidaan vertailla toisiinsa. \cite{kilitiede} %TODO needs moar bullshit
 
 \section{Menetelmät}
+Sanojen laskemisessa hyödynnetään binäärihakupuuta. Puu on solmuista koostuva tietorakenne, jossa jokaiseen solmuun voidaan tallentaa tietoa ja jokaisella solmulla on 1 tai 0 vanhempaa sekä $n$ lasta missä $n \in \mathbb{N}_0$. Puu voidaan esittää suunnattuina yhtenäisinä verkkoina, joissa jokaisesta solmusta on kaari jokaiseen lapseensa. \cite{cormen}
+
+Puussa on aina tasan yksi solmu, jolla ei ole vanhempaa ja tätä solmua kutsutaan juureksi. Solmuja, joihin ei tule kaarta mistään toisesta solmusta kutsutaan lehdiksi. Solmun korkeus on kaarien määrä pisimmällä polulla solmusta lehteen. Usein puhutaan myös puun korkeudesta, jolla tarkoitetaan puun juurisolmun korkeutta. Esimerkiksi kuvassa \ref{yleinenpuu} on esitettynä puu, jonka solmuihin on tallennettu kokonaislukuja. Puun juurisolmun arvo on 5 ja lehtisolmuissa on arvot 1, 4, -1, 12, 6, 13 ja 3 sekä korkeus 3 (kaaret $5 \rightarrow 7$, $7 \rightarrow 11$ ja $11 \rightarrow 13$ tai $11 \rightarrow 3$). \cite{cormen}
+
+\begin{figure}
+\centering
+\includegraphics[width=13cm]{graphs/puu.eps}
+\caption{Esimerkki puusta, johon on tallennettu kokonaislukuja.}
+\label{yleinenpuu}
+\end{figure}
+
+Binäärihakupuussa jokaisella solmulla on 0, 1 tai 2 lasta ja kunkin solmun vasemmasta lapsesta lähtevässä alipuussa on vain arvoltaan solmun arvoa pienempiä arvoja ja oikeassa lapsessa lähtevässä alipuussa vain solmun arvoa suurempia arvoja. Näin etsittäessä tiettyä solmua, voidaan kunkin solmun kohdalla sulkea pois toinen solmun lapsista, jolloin joudutaan tutkimaan korkeintaan puun korkeuden verran solmuja.
+
+\begin{figure}
+\centering
+\includegraphics[width=7cm]{graphs/binaaripuu.eps}
+\caption{}
+\label{binaaripuu}
+\end{figure}
+
+Eräs toteutus 
+
 
 
 \section{Toteutus}
